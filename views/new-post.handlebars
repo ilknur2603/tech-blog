@@ -1,0 +1,17 @@
+<section>
+    <h2>Create new Post</h2>
+    <form class="new-post-form">
+        <div>
+            <label for="">Title</label>
+            <input type="text" id="post-title" name="post-title">
+        </div>
+        <div>
+            <label for="">Post</label>
+            <textarea name="post-text" id="post-text"></textarea>
+            <textarea name="post-userId" id="post-userId" style="display: none;">{{userId}}</textarea>
+        </div>
+        <button type="submit" class="btn">Create</button>
+    </form>
+</section>
+
+<script src="/javascript/add-post.js"></script>

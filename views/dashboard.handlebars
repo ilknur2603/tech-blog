@@ -1,0 +1,18 @@
+{{#if posts.length}}
+<section>
+    <h2>Your post </h2>
+    <ol class="post-list">
+        {{#each posts as |post|}}
+    <li>
+        {{> dashboard-post-info post}}
+    </li>
+    {{/each}}
+    </ol>
+</section>
+{{else}}
+<section>
+    <h3>You havent any post</h3>
+</section>
+{{/if}}
+
+<button onclick="window.location.href='/dashboard/new'"> Add new post </button>
