@@ -76,7 +76,9 @@ and the express-session npm package for authentication.
 ![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)   https://twitter.com/home/
 <br>
 ***
+<br>
 ![Slack](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white)         **ILKNUR DAYANC BLOOMER
+<br>
 ***
 ---
 
