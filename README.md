@@ -49,7 +49,9 @@ NPM install, NPM install express, NPM install dotenv, NPM install sequelize, Nod
 <br>
 ![png](https://github.com/ilknur2603/tech-blog/blob/main/assets/Screenshot%20(112).png)
 <br>
+![HEROKU](https://dashboard.heroku.com/apps/tech-blog-ilknur)
 <br>
+![Heroku.png](https://github.com/ilknur2603/tech-blog/blob/main/assets/herokuss.png)
 <br>
 
 to build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well.<br> 
