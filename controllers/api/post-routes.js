@@ -56,21 +56,21 @@ router.get("/:id", (req, res) => {
         ]
     })
     .then((dbPostData) => {
-        if (!dbPostData) {
-          res.status(404).json({ message: "there is No post's id  " });
-          return;
-        }
-        res.json(dbPostData);
-      })
-      .catch((err) => {
-        console.log(err);
-        res.status(500).json(err);
+      if (!dbPostData) {
+        res.status(404).json({ message: "there is No post's id  " });
+        return;
+      }
+      res.json(dbPostData);
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
       });
     
 })
 
 //*********************************************************************** */
-
+//post
 router.post( "/" , withAuth, (req, res) => {
     Post.create({
       title : req.body.title,
@@ -85,7 +85,7 @@ router.post( "/" , withAuth, (req, res) => {
 });
 
 //********************************************************************************* *
-
+//update post
 router.put("/:id", withAuth, (req,res) => {
     Post.update({
         title: req.body.title,
@@ -111,7 +111,7 @@ router.put("/:id", withAuth, (req,res) => {
 })
 
 //************************************** */
-
+//delete post
 router.delete("/:id", withAuth, (req,res) => {
     Post.destroy({
         where: {
